@@ -1,8 +1,8 @@
-🧠 Clasificación de Prendas de Ropa — Fashion-MNIST (CNN con TensorFlow)
+Clasificación de Prendas de Ropa — Fashion-MNIST (CNN con TensorFlow)
 
 Este proyecto implementa una red neuronal convolucional (CNN) usando TensorFlow/Keras para clasificar imágenes del dataset Fashion-MNIST, compuesto por 70,000 imágenes en escala de grises de 10 categorías de ropa.
 
-🎯 Objetivos del proyecto
+Objetivos del proyecto
 
 Cargar y explorar el dataset Fashion-MNIST
 
@@ -16,7 +16,7 @@ Evaluar su rendimiento en datos no vistos
 
 Visualizar predicciones reales vs predichas
 
-📂 Dataset: Fashion-MNIST
+Dataset: Fashion-MNIST
 
 El dataset contiene 10 clases de ropa:
 
@@ -31,7 +31,7 @@ Clase	Etiqueta
 7	Sneaker
 8	Bag
 9	Ankle boot
-🧱 Arquitectura del Modelo (Resumen)
+Arquitectura del Modelo (Resumen)
 
 Conv2D (32 filtros) + ReLU
 
@@ -49,10 +49,9 @@ Dropout(0.3)
 
 Dense(10, softmax)
 
-📌 Total de parámetros entrenables: 225,034
-📌 Precisión final en el conjunto de prueba: ≈ 90.3%
-
-📊 Resultados
+Total de parámetros entrenables: 225,034
+Precisión final en el conjunto de prueba: ≈ 90.3%
+Resultados
 
 El modelo alcanzó un 90%+ de accuracy clasificando correctamente la mayoría de las prendas.
 
