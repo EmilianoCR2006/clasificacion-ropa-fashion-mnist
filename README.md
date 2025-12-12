@@ -1,24 +1,24 @@
-Clasificación de Prendas de Ropa — Fashion-MNIST (CNN con TensorFlow)
+lasificación de Prendas de Ropa — Fashion-MNIST (CNN con TensorFlow)
 
-Este proyecto implementa una red neuronal convolucional (CNN) usando TensorFlow/Keras para clasificar imágenes del dataset Fashion-MNIST, compuesto por 70,000 imágenes en escala de grises de 10 categorías de ropa.
+Este proyecto implementa una red neuronal convolucional (CNN) utilizando TensorFlow/Keras para clasificar imágenes del dataset Fashion-MNIST, el cual contiene 70,000 imágenes en escala de grises, divididas en 10 categorías de prendas de vestir.
 
 Objetivos del proyecto
 
-Cargar y explorar el dataset Fashion-MNIST
+Cargar y explorar el dataset Fashion-MNIST.
 
-Preprocesar y normalizar las imágenes
+Preprocesar y normalizar las imágenes.
 
-Construir una arquitectura CNN eficiente
+Construir una arquitectura de red neuronal convolucional.
 
-Entrenar y validar el modelo
+Entrenar y validar el modelo.
 
-Evaluar su rendimiento en datos no vistos
+Evaluar el rendimiento en datos de prueba.
 
-Visualizar predicciones reales vs predichas
+Visualizar predicciones generadas por el modelo.
 
 Dataset: Fashion-MNIST
 
-El dataset contiene 10 clases de ropa:
+El dataset contiene 10 categorías de prendas:
 
 Clase	Etiqueta
 0	T-shirt/top
@@ -31,48 +31,52 @@ Clase	Etiqueta
 7	Sneaker
 8	Bag
 9	Ankle boot
-Arquitectura del Modelo (Resumen)
 
-Conv2D (32 filtros) + ReLU
+Las imágenes tienen resolución de 28x28 píxeles en escala de grises.
 
-MaxPooling2D
+Arquitectura del Modelo
 
-Conv2D (64 filtros) + ReLU
+La arquitectura implementada se compone de las siguientes capas:
 
-MaxPooling2D
+Capa Conv2D con 32 filtros y activación ReLU.
 
-Flatten
+Capa MaxPooling2D.
 
-Dense(128) + ReLU
+Capa Conv2D con 64 filtros y activación ReLU.
 
-Dropout(0.3)
+Capa MaxPooling2D.
 
-Dense(10, softmax)
+Capa Flatten para aplanar los mapas de características.
+
+Capa Dense con 128 unidades y activación ReLU.
+
+Capa Dropout para reducir sobreajuste.
+
+Capa Dense final con 10 unidades y activación softmax para la clasificación.
 
 Total de parámetros entrenables: 225,034
-Precisión final en el conjunto de prueba: ≈ 90.3%
+Precisión final en el conjunto de prueba: aproximadamente 90.3%
+
 Resultados
 
-El modelo alcanzó un 90%+ de accuracy clasificando correctamente la mayoría de las prendas.
+El modelo entrenado logra una precisión superior al 90% en el conjunto de prueba.
+También incluye visualización de:
 
-Incluye visualización de:
+Imágenes del dataset.
 
-Imágenes de entrenamiento
+Comparaciones de etiquetas reales vs. predichas por el modelo.
 
-Predicciones del modelo
-
-Comparación Real vs Predicho
--Como ejecutar el proyecto
-Clonar el repositorio
+Instrucciones para ejecutar el proyecto
+1. Clonar el repositorio
 git clone https://github.com/EmilianoCR2006/clasificacion-ropa-fashion-mnist.git
 
--Instalar dependencias
+2. Instalar dependencias necesarias
 pip install tensorflow numpy matplotlib scikit-learn
 
--Abrir el notebook
+3. Ejecutar el notebook
 jupyter notebook Proyecto1.ipynb
 
- Tecnologías usadas
+Tecnologías utilizadas
 
 Python
 
@@ -88,9 +92,9 @@ Jupyter Notebook
 
 Licencia
 
-Este proyecto está bajo la licencia MIT, lo que permite uso libre del código con atribución.
+Este proyecto está distribuido bajo la licencia MIT, lo cual permite el uso y modificación del código con atribución correspondiente.
 
 Autor
 
 EmilianoCR2006
-Proyecto personal / portafolio de Deep Learning.
+Proyecto académico enfocado en la aplicación de redes neuronales convolucionales para clasificación de imágenes.
